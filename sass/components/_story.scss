@@ -1,0 +1,66 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    background-color: $color-white;
+    border-radius: .3rem;
+    padding: 6rem;
+    padding-left: 10rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    font-size: $default-font-size;
+
+    transform: skewX(-12deg);
+    -webkit-transform: skewX(-12deg);
+    -moz-transform: skewX(-12deg);
+    -ms-transform: skewX(-12deg);
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    & > * {
+        transform: skewX(12deg);
+        -webkit-transform: skewX(12deg);
+        -moz-transform: skewX(12deg);
+        -ms-transform: skewX(12deg);
+    }
+
+    &__shape {
+        width: 16rem;
+        height: 16rem;
+        float: left;
+        background-color: $color-primary;
+        transform: translateX(-4rem) skewX(12deg);
+        position: relative;
+
+        //defining where the content should be outside the shape
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        -moz-shape-outside: circle(50% at 50% 50%);
+        -ms-shape-outside: circle(50% at 50% 50%);
+         
+        
+         //Circle polygon
+        clip-path: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        -moz-clip-path: circle(50% at 50% 50%);
+        -ms-clip-path: circle(50% at 50% 50%);
+
+        &--image{
+            height: 100%;
+        }
+    }
+
+    &__text{
+        color: $color-black;
+    }
+
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+    }
+}
