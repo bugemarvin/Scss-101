@@ -1,6 +1,7 @@
 .navigation {
-    &__checkbox-input {
+    &__checkbox {
         //display: none;
+        top: 0;
     }
 
     &__button {
@@ -82,7 +83,7 @@
         }
     }
 
-    &__checkbox-input:checked ~ &__background {
+    &__checkbox:checked ~ &__background {
         transform: scale(90);
     }
 }
