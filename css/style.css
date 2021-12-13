@@ -662,7 +662,10 @@ li {
     width: calc((((100% - (6em * 3)) / 4) * 3) + 2 * 6em); }
 
 .navigation__checkbox {
-  top: 0; }
+  display: none;
+  top: 0;
+  right: 0;
+  position: absolute; }
 
 .navigation__button {
   background-color: #fff;
@@ -672,7 +675,7 @@ li {
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
-  z-index: 2000;
+  z-index: 3000;
   box-shadow: 0 1rem 3rem rgba(17, 17, 17, 0.1);
   text-align: center; }
 
@@ -684,14 +687,14 @@ li {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 1000; }
+  z-index: 1500; }
 
 .navigation__nav {
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: 2000;
   opacity: 0;
   width: 0; }
 
@@ -727,5 +730,5 @@ li {
   color: #55c57a;
   transform: translateX(1rem); }
 
-.navigation__checkbox-input:checked ~ .navigation__background {
+.navigation__checkbox:checked ~ .navigation__background {
   transform: scale(90); }
