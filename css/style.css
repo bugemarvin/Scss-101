@@ -619,7 +619,9 @@ li {
   left: 0;
   top: 0;
   background-color: rgba(17, 17, 17, 0.8);
-  z-index: 3500; }
+  z-index: 3500;
+  align-items: center;
+  display: none; }
   .popup__content {
     width: 75%;
     background-color: #fff;
