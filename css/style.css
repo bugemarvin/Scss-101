@@ -622,14 +622,39 @@ li {
   z-index: 3500;
   display: none; }
   .popup__content {
-    width: 75%;
-    height: 50rem;
-    background-color: #fff;
-    height: 40vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2ren 4rem rgba(17, 17, 17, 0.2);
+    border-radius: 0.3rem;
+    display: table;
+    overflow: hidden; }
+  .popup__left {
+    width: 33%;
+    display: table-cell; }
+  .popup__right {
+    width: 67%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    width: 100%;
+    display: block; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    -webkit-column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-column-rule: 1px solid #eee;
+    -webkit-column-rule: 1px solid #eee; }
 
 .header {
   height: 95vh;

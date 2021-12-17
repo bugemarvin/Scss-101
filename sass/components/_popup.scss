@@ -9,11 +9,45 @@
     display: none;
     
     &__content{
-        width: 75%;
-        height: 50rem;
-        background-color: #fff;
-        height: 40vh ;
         @include absCenter;
-        
+
+        width: 75%;
+        background-color: $color-white;
+        box-shadow: 0 2ren 4rem rgba($color-black, 0.2);
+        border-radius: 0.3rem;
+        display: table;
+        overflow: hidden;
+    }   
+    &__left{
+        width: 33%;
+        display: table-cell;
     }
+
+    &__right{
+        width: 67%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img{
+        width: 100%;
+        display: block;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-gap: 4rem; //1em = 14px;
+        -moz-column-gap: 4rem; //1em = 14px;
+        -webkit-column-gap: 4rem; //1em = 14px;
+        column-rule: 1px solid $color-grey-light-2;
+        -moz-column-rule: 1px solid $color-grey-light-2;
+        -webkit-column-rule: 1px solid $color-grey-light-2;
+    }
+    
 }
