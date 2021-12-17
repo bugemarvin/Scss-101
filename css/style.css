@@ -470,7 +470,7 @@ li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -620,12 +620,16 @@ li {
   top: 0;
   background-color: rgba(17, 17, 17, 0.8);
   z-index: 3500;
-  align-items: center;
   display: none; }
   .popup__content {
     width: 75%;
+    height: 50rem;
     background-color: #fff;
-    height: 40vh; }
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .header {
   height: 95vh;
@@ -643,7 +647,7 @@ li {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }

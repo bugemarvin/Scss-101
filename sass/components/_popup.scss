@@ -6,13 +6,14 @@
     top: 0;
     background-color: rgba($color-black, 0.8);
     z-index: 3500;
-    align-items: center;
     display: none;
     
     &__content{
         width: 75%;
+        height: 50rem;
         background-color: #fff;
         height: 40vh ;
-        //font-size: $default-font-size;
+        @include absCenter;
+        
     }
 }
