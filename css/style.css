@@ -1,3 +1,19 @@
+/*
+0 - 600px(0 - 60rem): Phone
+600 - 900px(60rem - 90rem): tablet portrait
+900 - 1200px(90rem - 120rem): Tablet landscape
+[1200 - 1800px(120rem - 180rem)] is where the normal css styles apply
+1800px + (180rem + ): Big Desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -6,7 +22,19 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*@include respond(phone){
+        font-size: 50%; not required since 900 == 600px screen size
+    }*/ }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -114,7 +142,19 @@ body {
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*@include respond(phone){
+        font-size: 50%; not required since 900 == 600px screen size
+    }*/ }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -148,26 +188,55 @@ li {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
-@media screen and (max-width: 80rem) {
-  html {
-    font-size: 8px; } }
+/*
+@media screen and (max-width:120rem){
+    html{
+        font-size:12px;
+    }
+}
 
-@media screen and (max-width: 60rem) {
-  html {
-    font-size: 6px; } }
+@media screen and (max-width:90rem){
+    html{
+        font-size:10px;
+    }
+}
 
-@media screen and (max-width: 46.5rem) {
-  html {
-    font-size: 5px; } }
+@media screen and (max-width:80rem){
+    html{
+        font-size:8px;
+    }
+}
 
-@media screen and (max-width: 37rem) {
-  html {
-    font-size: 4px; } }
+@media screen and (max-width:70rem){
+    html{
+        font-size:7px;
+    }
+}
 
-@media screen and (max-width: 28.5rem) {
-  html {
-    font-size: 2px; } }
+@media screen and (max-width:60rem){
+    html{
+        font-size:6px;
+    }
+}
 
+@media screen and (max-width:50rem){
+    html{
+        font-size:4px;
+    }
+}
+
+@media screen and (max-width:37rem){
+    html{
+        font-size:4px;
+    }
+}
+
+@media screen and (max-width:28.5rem){
+    html{
+        font-size:2px;
+    }
+}
+*/
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
