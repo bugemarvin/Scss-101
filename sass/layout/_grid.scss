@@ -9,14 +9,20 @@
         @include respond(tab-port){
             margin-bottom: $gutter-vertical-small;
         }
+
+        @include respond(phone){
+            margin-bottom: $gutter-vertical-small-phone;
+        }
     }
 
     @include respond(tab-port){
         max-width: 50rem;
+        padding: 0 3rem;
     }
 
     @include respond(phone){
         max-width: 40rem;
+        padding: 0 2rem;
     }
 
     @include clearfix;

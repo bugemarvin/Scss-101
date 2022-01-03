@@ -16,11 +16,21 @@
 
     &__navigation {
         display: inline-block;
+
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__copyright {
         width: 85%;
         float: right;
+
+        @include respond(tab-port){
+            width: 100%;
+            float: none;
+        }
     }
 
     &__logo-box {
