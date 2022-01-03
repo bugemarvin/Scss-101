@@ -7,6 +7,27 @@
 
     /*curving the bottom path*/
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -ms-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @include respond(tab-port){
+        height: 95vh;
+        //curving the bottom path
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        -ms-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); 
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    }
+
+    @include respond(phone){
+        height: 95vh;
+        //curving the bottom path
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -ms-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
+    }
 
     &__logo-box{
         position: absolute;
