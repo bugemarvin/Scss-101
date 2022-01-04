@@ -58,6 +58,10 @@ body{
 
     @include clearfix;
 
+    @include respond(tab-land){
+        font-size: 3.3rem;
+    }
+
     @include respond(tab-port){
         font-size: 3rem;
     }

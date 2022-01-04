@@ -1,6 +1,5 @@
 .row{
     max-width: $grid-width;
-    /*background-color: #eee;*/
     margin: 0 auto; 
 
     &:not(:last-child){
@@ -10,16 +9,14 @@
             margin-bottom: $gutter-vertical-small;
         }
     }
-
+ 
     @include respond(tab-port){
         max-width: 50rem;
-        padding: 0 3rem;
     }
 
     @include clearfix;
 
     [class^="col-"]{
-        /*background-color: orangered;*/
         float: left;
 
         &:not(:last-child){
