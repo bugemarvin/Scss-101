@@ -11,6 +11,11 @@
         padding: 20rem 0;
         margin-top: -15vh;
     }
+
+    @include respond(phone){
+        padding: 20rem 1rem;
+        margin-top: -15vh;
+    }
 }
 
 .section-features{
@@ -34,6 +39,10 @@
     @include respond(tab-port){
         padding: 10rem 0;
     }
+
+    @include respond(phone){
+        padding: 10rem 1rem;
+    }
 }
 
 .section-tours {
@@ -46,7 +55,12 @@
     }
 
     @include respond(tab-port){
-        padding: 20rem 0 10rem 0;
+        padding: 10rem 0 10rem 0;
+        margin-top: -5.5rem;
+    }
+
+    @include respond(phone){
+        padding: 20rem 1rem 5rem 1rem;
         margin-top: -5.5rem;
     }
 }
@@ -60,6 +74,10 @@
 
     @include respond(tab-port){
         padding: 10rem 0;
+    }
+
+    @include respond(phone){
+        padding: 10rem 1rem;
     }
 }
 
