@@ -9,20 +9,11 @@
         @include respond(tab-port){
             margin-bottom: $gutter-vertical-small;
         }
-
-        @include respond(phone){
-            margin-bottom: $gutter-vertical-small-phone;
-        }
     }
 
     @include respond(tab-port){
         max-width: 50rem;
         padding: 0 3rem;
-    }
-
-    @include respond(phone){
-        max-width: 40rem;
-        padding: 0 2rem;
     }
 
     @include clearfix;
@@ -36,12 +27,7 @@
 
             @include respond(tab-port){
                 margin-right: 0;
-                margin-bottom: $gutter-vertical-smaller;
-            }
-
-            @include respond(phone){
-                margin-right: 0;
-                margin-bottom: $gutter-vertical-small-phone;
+                margin-bottom: $gutter-vertical-small;
             }
             
         }
