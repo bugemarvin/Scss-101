@@ -292,16 +292,32 @@ li {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
   @media (max-width: 56.25em) {
     .section-book {
-      padding: 10rem 0; } }
+      padding: 7.5rem 2rem; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 50%, transparent, 50%, transparent), url(/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 50%, transparent, 50%, transparent), url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.8); }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 70%, transparent, 70%, transparent), url(../img/nat-10.jpg);
+      background-size: cover;
+      background-position: top; } }
+  @media (max-width: 37.5em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%, transparent, 100%, transparent), url(../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 70%;
+        padding: 4rem; } }
+    @media (max-width: 37.5em) {
+      .book__form {
+        width: 100%;
+        padding: 1.5rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -654,7 +670,14 @@ li {
       backface-visibility: hidden;
       transition: all .5s; }
   .story__text {
+    transform: skew(12deg);
     color: #111; }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0);
+        -webkit-transform: skewX(0);
+        -moz-transform: skewX(0);
+        -ms-transform: skewX(0); } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -720,6 +743,10 @@ li {
   margin-top: .7rem;
   display: block;
   transition: all .3s; }
+  @media (max-width: 37.5em) {
+    .form__label {
+      font-size: 0.6rem;
+      font-weight: 400; } }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
@@ -745,6 +772,12 @@ li {
   position: absolute;
   top: -.5rem;
   left: 0; }
+  @media (max-width: 37.5em) {
+    .form__radio-button {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: 2rem;
+      margin-top: 0.8rem; } }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -758,6 +791,10 @@ li {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity .2s; }
+    @media (max-width: 37.5em) {
+      .form__radio-button::after {
+        width: 0.9rem;
+        height: 0.9rem; } }
 
 .form__radio-input {
   display: none; }

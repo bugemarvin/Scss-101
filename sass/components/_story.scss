@@ -90,7 +90,15 @@
     }
 
     &__text{
+        transform: skew(12deg);
         color: $color-black;
+
+        @include respond(phone){
+            transform: skewX(0);
+            -webkit-transform: skewX(0);
+            -moz-transform: skewX(0);
+            -ms-transform: skewX(0);
+        }
     }
 
     &__caption{

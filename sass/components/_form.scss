@@ -39,6 +39,11 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+
+        @include respond(phone){
+            font-size: 0.6rem;
+            font-weight: 400;
+        }
     }
 
     &__input:placeholder-shown + &__label {
@@ -69,6 +74,13 @@
         top: -.5rem;
         left: 0;
 
+        @include respond(phone){
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-left: 2rem;
+            margin-top: 0.8rem;
+        }
+
         &::after {
             content: "";
             display: block;
@@ -79,6 +91,11 @@
             @include absCenter;
             opacity: 0;
             transition: opacity .2s;
+
+            @include respond(phone){
+                width: 0.9rem;
+                height: 0.9rem;
+            }
         }
     }
 
