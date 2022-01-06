@@ -598,10 +598,14 @@ li {
   -ms-transform: skewX(-12deg); }
   @media (max-width: 56.25em) {
     .story {
-      width: 100%; } }
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .story {
       width: 100%;
+      padding: 2.5rem;
+      padding-left: 4rem;
       transform: skewX(0);
       -webkit-transform: skewX(0);
       -moz-transform: skewX(0);

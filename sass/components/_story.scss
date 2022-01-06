@@ -15,10 +15,14 @@
 
     @include respond(tab-port){
         width:100%;
+        padding: 4rem;
+        padding-left: 7rem;
     }
 
     @include respond(phone){
         width:100%;
+        padding: 2.5rem;
+        padding-left: 4rem;
         transform: skewX(0);
         -webkit-transform: skewX(0);
         -moz-transform: skewX(0);
