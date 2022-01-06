@@ -937,7 +937,7 @@ li {
     @media (max-width: 37.5em) {
       .navigation__button {
         top: 2rem;
-        right: 6rem; } }
+        right: 1rem; } }
   .navigation__background {
     height: 6rem;
     width: 6rem;
@@ -953,7 +953,7 @@ li {
     @media (max-width: 37.5em) {
       .navigation__background {
         top: 2rem;
-        right: 6.5rem; } }
+        right: 1.5rem; } }
   .navigation__nav {
     height: 100vh;
     position: fixed;
