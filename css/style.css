@@ -23,7 +23,6 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%;
-  z-index: 1000;
   /*@include respond(phone){
         font-size: 50%; not required since 900 == 600px screen size
     }*/ }
@@ -162,7 +161,6 @@ body {
 
 html {
   font-size: 62.5%;
-  z-index: 1000;
   /*@include respond(phone){
         font-size: 50%; not required since 900 == 600px screen size
     }*/ }
