@@ -60,7 +60,8 @@
     &__nav {
         height: 100vh;
         position: fixed;
-        top: 0;        
+        top: 0;
+        z-index: -2000;     
 
         opacity: 0;
         width: 0;
@@ -73,7 +74,7 @@
         @include absCenter;
         list-style: none;
         text-align: center;
-        width: 100;
+        width: 100%;
         overflow: hidden;
     }
 
