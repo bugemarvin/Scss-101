@@ -604,8 +604,8 @@ li {
   @media (max-width: 37.5em) {
     .story {
       width: 100%;
-      padding: 2.5rem;
-      padding-left: 4rem;
+      padding: 1.5rem;
+      padding-left: 2.5rem;
       transform: skewX(0);
       -webkit-transform: skewX(0);
       -moz-transform: skewX(0);
