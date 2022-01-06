@@ -111,6 +111,7 @@
                         transparent),
                         url(../img/nat-10.jpg);
         background-size: cover;
+        z-index: 3000;
     }
 
     @include respond(tab-port){

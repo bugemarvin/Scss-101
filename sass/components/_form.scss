@@ -54,7 +54,13 @@
 
     &__radio-group {
         width: 49%;
-        display: inline-block;        
+        display: inline-block;
+        
+        @include respond(tab-land){
+            width: 100%;
+            margin-bottom: 2rem;
+            z-index: 2000;
+        }
     }
 
     &__radio-label{
@@ -74,11 +80,10 @@
         top: -.5rem;
         left: 0;
 
-        @include respond(phone){
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-left: 2rem;
-            margin-top: 0.8rem;
+        @include respond(tab-land){
+            width: 2rem;
+            height: 2rem;
+            top: 0;
         }
 
         &::after {
@@ -91,11 +96,11 @@
             @include absCenter;
             opacity: 0;
             transition: opacity .2s;
-
-            @include respond(phone){
-                width: 0.9rem;
-                height: 0.9rem;
-            }
+        @include respond(tab-port){
+            width: 0.5rem;
+            height: 0.5rem;
+            left: 5;
+        }
         }
     }
 

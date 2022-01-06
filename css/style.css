@@ -301,7 +301,8 @@ li {
   @media (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 65%, transparent, 65%, transparent), url(../img/nat-10.jpg);
-      background-size: cover; } }
+      background-size: cover;
+      z-index: 3000; } }
   @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
@@ -756,6 +757,11 @@ li {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 75em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem;
+      z-index: 2000; } }
 
 .form__radio-label {
   font-size: 1.6rem;
@@ -772,12 +778,11 @@ li {
   position: absolute;
   top: -.5rem;
   left: 0; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 75em) {
     .form__radio-button {
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-left: 2rem;
-      margin-top: 0.8rem; } }
+      width: 2rem;
+      height: 2rem;
+      top: 0; } }
   .form__radio-button::after {
     content: "";
     display: block;
@@ -791,10 +796,11 @@ li {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity .2s; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .form__radio-button::after {
-        width: 0.9rem;
-        height: 0.9rem; } }
+        width: 0.5rem;
+        height: 0.5rem;
+        left: 5; } }
 
 .form__radio-input {
   display: none; }
