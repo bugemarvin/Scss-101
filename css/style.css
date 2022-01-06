@@ -796,10 +796,10 @@ li {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: opacity .2s; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .form__radio-button::after {
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.75rem;
+        height: 0.75rem;
         left: 5; } }
 
 .form__radio-input {
@@ -1001,7 +1001,6 @@ li {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -4;
     z-index: 2000;
     opacity: 0;
     width: 0;
@@ -1015,7 +1014,8 @@ li {
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
-    width: 100%; }
+    width: 100;
+    overflow: hidden; }
   .navigation__item {
     margin: 1rem; }
   .navigation__link:link, .navigation__link:visited {

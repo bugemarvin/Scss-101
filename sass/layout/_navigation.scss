@@ -61,7 +61,6 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: -4;
         z-index: 2000;
 
         opacity: 0;
@@ -75,7 +74,8 @@
         @include absCenter;
         list-style: none;
         text-align: center;
-        width: 100%;
+        width: 100;
+        overflow: hidden;
     }
 
     &__item {

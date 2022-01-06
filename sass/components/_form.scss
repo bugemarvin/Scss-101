@@ -96,9 +96,9 @@
             @include absCenter;
             opacity: 0;
             transition: opacity .2s;
-        @include respond(tab-port){
-            width: 0.5rem;
-            height: 0.5rem;
+        @include respond(tab-land){
+            width: 0.75rem;
+            height: 0.75rem;
             left: 5;
         }
         }
