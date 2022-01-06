@@ -60,8 +60,7 @@
     &__nav {
         height: 100vh;
         position: fixed;
-        top: 0;
-        z-index: 2000;
+        top: 0;        
 
         opacity: 0;
         width: 0;
@@ -117,6 +116,7 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        z-index: 2000;
     }
 
     //ICON SECTION

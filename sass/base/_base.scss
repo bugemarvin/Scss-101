@@ -8,7 +8,8 @@
 
 html{
     // This defines what 1rem is
-    font-size: 62.5%; // 1rem = 10px where is 10/16 = 62.5% 
+    font-size: 62.5%; // 1rem = 10px where is 10/16 = 62.5%
+    z-index: 1000;
 
     /*@include respond(phone){
         font-size: 50%; not required since 900 == 600px screen size
