@@ -11,6 +11,10 @@ body{
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
+    @include respond(phone){
+        margin-bottom: 3rem;
+    }
+
     &--main{
         display:block;
         font-size:6rem;
@@ -23,7 +27,7 @@ body{
 
         @include respond(phone){
             letter-spacing: 0;
-            font-family: 5rem;
+            font-size: 5rem;
         }
     }
 
@@ -39,6 +43,7 @@ body{
 
         @include respond(phone){
             letter-spacing: 0;
+            font-size: 1.5rem;
         }
     }
 }

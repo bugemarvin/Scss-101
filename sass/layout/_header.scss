@@ -22,6 +22,13 @@
             rgba($color-secondary-lighter, 0.8)),
             url("../img/hero.jpg");
     }
+    @media (min-width: 2000px){
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-grey-dark, 0.8),
+            rgba($color-grey-dark-2, 0.8)),
+            url("../img/hero.jpg");
+    }
 
     @include respond(tab-port){
         height: 95vh;
