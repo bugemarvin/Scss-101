@@ -18,15 +18,15 @@
     @media (min-resolution: 192dpi) and (min-width: 600px){
         background-image: linear-gradient(
             to right bottom, 
-            rgba($color-secondary-light, 0.8),
-            rgba($color-secondary-lighter, 0.8)),
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
             url("../img/hero.jpg");
     }
     @media (min-width: 2000px){
         background-image: linear-gradient(
             to right bottom, 
-            rgba($color-grey-dark, 0.8),
-            rgba($color-grey-dark-2, 0.8)),
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
             url("../img/hero.jpg");
     }
 

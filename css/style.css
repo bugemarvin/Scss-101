@@ -353,7 +353,7 @@ li {
   @media (max-width: 37.5em) {
     .section-about {
       padding: 20rem 1rem;
-      margin-top: -15vh; } }
+      margin-top: -13vh; } }
 
 .section-features {
   padding: 20rem 0;
@@ -1241,10 +1241,10 @@ li {
    }*/ }
   @media (min-resolution: 192dpi) and (min-width: 600px) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url("../img/hero.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
   @media (min-width: 2000px) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(153, 153, 153, 0.8)), url("../img/hero.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
   @media (max-width: 56.25em) {
     .header {
       height: 95vh;
