@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     background-color: rgba($color-black, 0.8);
-    z-index: 3500;
+    z-index: -2000;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
@@ -24,11 +24,23 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.3);
         transition: all .4s .2s;
+
+        @include respond(tab-port){
+            //width: 50%;
+            position: relative;
+        }
     }
 
     &__left{
         width: 33%;
         display: table-cell;
+
+        @include respond(tab-port){
+            //width: 100%;
+            position: absolute;
+            float: bottom;
+        }
+        
     }
 
     &__right{
@@ -36,6 +48,10 @@
         display: table-cell;
         padding: 3rem 5rem;
         vertical-align: middle;
+
+        @include respond(tab-port){
+            //
+        }
     }
 
     &__img{
@@ -67,17 +83,37 @@
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
 
+        @include respond(tab-port){
+            //font-size: 0.7rem;
+            //margin-bottom: 2rem;
+
+            column-count: 1;
+            -moz-column-count: 1;
+            -webkit-column-count: 1;
+            -ms-column-count: 1;
+
+            column-gap: 2rem;
+            -moz-column-gap: 2rem;
+            -webkit-column-gap: 2rem;
+            -ms-column-gap: 2rem;
+        }
+
     }
 
     //openstate
      &:target{
         opacity: 1;
         visibility: visible;
+        z-index: 3500;
     }
 
     &:target &__content{
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+
+        @include respond(tab-port){
+            transform: translate(-50%, -50%) scale(0.5);
+        }
     }
 
     &__close{
