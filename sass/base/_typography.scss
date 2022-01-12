@@ -12,7 +12,7 @@ body{
     margin-bottom: 6rem;
 
     @include respond(phone){
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 
     &--main{
