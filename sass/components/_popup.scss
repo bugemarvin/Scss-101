@@ -32,8 +32,6 @@
         @include respond(tab-land){
             display: table;
             position:relative;
-            transform: translate(0, 0) scale(95);
-            transition: all .4s .2s;
             width: 90%;
 
         }
