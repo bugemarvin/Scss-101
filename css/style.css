@@ -1109,18 +1109,7 @@ li {
   z-index: -2000;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
-  /*@if $breakpoint == phone-small{  //282px
-      @media (max-width: 17.6em) {
-         @content
-      };
-   }*/ }
-  @media (max-width: 56.25em) {
-    .popup {
-      height: 30vh;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); } }
+  transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -1140,8 +1129,12 @@ li {
          @content
       };
    }*/ }
-    @media (max-width: 37.5em) {
+    @media (max-width: 75em) {
       .popup__content {
+        display: table;
+        position: relative;
+        transform: translate(0%, 0%) scale(95);
+        transition: all .4s .2s;
         width: 90%; } }
   .popup__left {
     width: 33%;
@@ -1166,9 +1159,7 @@ li {
    }*/ }
     @media (max-width: 56.25em) {
       .popup__right {
-        width: 100%;
-        display: table;
-        padding: 1.5rem 2rem; } }
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -1212,15 +1203,7 @@ li {
     z-index: 3500; }
   .popup:target .popup__content {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    /*@if $breakpoint == phone-small{  //282px
-      @media (max-width: 17.6em) {
-         @content
-      };
-   }*/ }
-    @media (max-width: 56.25em) {
-      .popup:target .popup__content {
-        transform: translate(-50%, -50%) scale(1.1); } }
+    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
