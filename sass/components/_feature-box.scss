@@ -33,7 +33,7 @@
         transform: translateY(-1.5rem) scale(1.05);
 
         @include respond(tab-port){
-            transform: translateY(0rem) scale(0);
+            transform: translateY(0rem) scale(1);
         }
     }
 }

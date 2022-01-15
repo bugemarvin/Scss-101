@@ -705,7 +705,7 @@ li {
    }*/ }
     @media (max-width: 56.25em) {
       .feature-box:hover {
-        transform: translateY(0rem) scale(0); } }
+        transform: translateY(0rem) scale(1); } }
 
 .card {
   -ms-perspective: 150rem;
