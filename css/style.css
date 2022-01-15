@@ -1129,31 +1129,14 @@ li {
          @content
       };
    }*/ }
-    @media (max-width: 56.25em) {
-      .popup__content {
-        position: relative; } }
   .popup__left {
     width: 33%;
-    display: table-cell;
-    /*@if $breakpoint == phone-small{  //282px
-      @media (max-width: 17.6em) {
-         @content
-      };
-   }*/ }
-    @media (max-width: 56.25em) {
-      .popup__left {
-        position: absolute;
-        float: bottom; } }
+    display: table-cell; }
   .popup__right {
     width: 67%;
     display: table-cell;
     padding: 3rem 5rem;
-    vertical-align: middle;
-    /*@if $breakpoint == phone-small{  //282px
-      @media (max-width: 17.6em) {
-         @content
-      };
-   }*/ }
+    vertical-align: middle; }
   .popup__img {
     display: block;
     width: 100%; }
@@ -1187,10 +1170,10 @@ li {
         -moz-column-count: 1;
         -webkit-column-count: 1;
         -ms-column-count: 1;
-        column-gap: 2rem;
-        -moz-column-gap: 2rem;
-        -webkit-column-gap: 2rem;
-        -ms-column-gap: 2rem; } }
+        column-gap: 0rem;
+        -moz-column-gap: 0rem;
+        -webkit-column-gap: 0rem;
+        -ms-column-gap: 0rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible;
@@ -1205,7 +1188,7 @@ li {
    }*/ }
     @media (max-width: 56.25em) {
       .popup:target .popup__content {
-        transform: translate(-50%, -50%) scale(0.5); } }
+        transform: translate(-50%, -50%) scale(1.1); } }
   .popup__close:link, .popup__close:visited {
     color: #777;
     position: absolute;
@@ -1239,10 +1222,7 @@ li {
          @content
       };
    }*/ }
-  @media (min-resolution: 192dpi) and (min-width: 600px) {
-    .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
-  @media (min-width: 2000px) {
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
   @media (max-width: 56.25em) {

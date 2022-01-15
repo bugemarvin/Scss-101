@@ -9,8 +9,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-
-    //display: none; //this does not allow us to animate the popup
     
     &__content{
         @include absCenter;
@@ -26,20 +24,12 @@
         transition: all .4s .2s;
 
         @include respond(tab-port){
-            //width: 50%;
-            position: relative;
         }
     }
 
     &__left{
         width: 33%;
         display: table-cell;
-
-        @include respond(tab-port){
-            //width: 100%;
-            position: absolute;
-            float: bottom;
-        }
         
     }
 
@@ -48,10 +38,6 @@
         display: table-cell;
         padding: 3rem 5rem;
         vertical-align: middle;
-
-        @include respond(tab-port){
-            //
-        }
     }
 
     &__img{
@@ -92,10 +78,10 @@
             -webkit-column-count: 1;
             -ms-column-count: 1;
 
-            column-gap: 2rem;
-            -moz-column-gap: 2rem;
-            -webkit-column-gap: 2rem;
-            -ms-column-gap: 2rem;
+            column-gap: 0rem;
+            -moz-column-gap: 0rem;
+            -webkit-column-gap: 0rem;
+            -ms-column-gap: 0rem;
         }
 
     }
@@ -112,7 +98,7 @@
         transform: translate(-50%, -50%) scale(1);
 
         @include respond(tab-port){
-            transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(1.1);
         }
     }
 
