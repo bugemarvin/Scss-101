@@ -24,7 +24,7 @@
         transition: all .4s .2s;
 
         @include respond(phone){
-            width:100%;
+            //width:100%;
             height: auto;
             transform: translate(0, 0) scale(0);
             position:fixed;
