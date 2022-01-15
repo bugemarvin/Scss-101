@@ -697,7 +697,15 @@ li {
       };
    }*/ }
   .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.05); }
+    transform: translateY(-1.5rem) scale(1.05);
+    /*@if $breakpoint == phone-small{  //282px
+      @media (max-width: 17.6em) {
+         @content
+      };
+   }*/ }
+    @media (max-width: 56.25em) {
+      .feature-box:hover {
+        transform: translateY(0rem) scale(0); } }
 
 .card {
   -ms-perspective: 150rem;
