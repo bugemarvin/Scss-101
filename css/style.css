@@ -1109,15 +1109,7 @@ li {
   z-index: -2000;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s;
-  /*@if $breakpoint == phone-small{  //282px
-      @media (max-width: 17.6em) {
-         @content
-      };
-   }*/ }
-  @media (max-width: 37.5em) {
-    .popup {
-      position: relative; } }
+  transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -1146,7 +1138,8 @@ li {
       .popup__content {
         width: 100%;
         height: auto;
-        transform: translate(0, 0) scale(0); } }
+        transform: translate(0, 0) scale(0);
+        position: fixed; } }
     @media (max-width: 75em) {
       .popup__content {
         display: table;
