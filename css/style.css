@@ -1220,7 +1220,6 @@ li {
         -ms-column-gap: 0rem; } }
     @media (max-width: 75em) {
       .popup__text {
-        font-size: 1rem;
         margin-bottom: 2rem; } }
   .popup:target {
     opacity: 1;
