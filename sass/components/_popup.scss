@@ -24,7 +24,6 @@
         transition: all .4s .2s;
 
         @include respond(phone){
-            //width:100%;
             height: auto;
             transform: translate(0, 0) scale(0);
             position:fixed;
@@ -55,6 +54,10 @@
         display: table-cell;
         padding: 3rem 5rem;
         vertical-align: middle;
+
+        @include respond(tab-port){
+            padding: 1.5rem 2.5rem;
+        }
 
         @include respond(tab-port){
             width: 100%;
