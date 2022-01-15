@@ -1,22 +1,28 @@
 .card {
+    position: relative;
+    height: 53rem;
+
+    @supports (perspective:0){
+    perspective:150rem;
     -ms-perspective: 150rem;
     -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
-    perspective: 150rem;
-    position: relative;
-    height: 53rem;
+    }
    
     &__side {
     height: 53rem;
     transition: all .8s ease;
     overflow: hidden;
     position: absolute;
-    width: 100%;
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    border-radius: .3rem;
+    width: 100%;    
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15 );
+    border-radius: .3rem;
+
+    @supports (backface-visibility: hidden){
+        backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -ms--backface-visibility: hidden;    }
 
 
     &--front{
@@ -55,22 +61,30 @@
         height: 23rem;
         background-blend-mode: screen;
 
+        @supports (clip-path: polygon(0 0)){
         /*curving the bottom path*/
         clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
         -moz-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
         -ms-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+        }
 
         &--1{
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-lighter), url('../img/nat-5.jpg');
+            @supports (background-image: none){
+                background-image: linear-gradient(to right bottom, 
+            $color-secondary-light, $color-secondary-lighter), url('../img/nat-5.jpg');
+            } 
+            
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../img/nat-6.jpg');
+            background-image: linear-gradient(to right bottom, 
+            $color-primary-light, $color-primary-dark), url('../img/nat-6.jpg');
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-darker), url('../img/nat-7.jpg');
+            background-image: linear-gradient(to right bottom, 
+            $color-tertiary-light, $color-tertiary-darker), url('../img/nat-7.jpg');
         }
     }
 
@@ -88,21 +102,34 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
+
+        @supports (box-decoration-break: clone){
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
         -moz-box-decoration-break: clone;
         -ms--box-decoration-break: clone;
+        }
 
         &--1{
-            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .88), rgba($color-secondary-lighter, .88)) 
+            @supports (background-image: $color-secondary-lighter){
+                background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-light, .88), rgba($color-secondary-lighter, .88));
+            }
+             
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+            @supports (background-image: $color-primary-dark){
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+            }            
         }
 
         &--3{
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-darker, .85));
+            @supports (background-image: $color-tertiary-darker){
+                background-image: linear-gradient(to right bottom, 
+                rgba($color-tertiary-light, .85), rgba($color-tertiary-darker, .85));
+            }            
         }
     }
 
@@ -163,11 +190,13 @@
     
         &--back{
             transform: rotateY(0);
+            @supports (clip-path: polygon(0 0)){
             /*curving the top path*/
             clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
             -webkit-clip-path: olygon(0 16%, 100% 0, 100% 100%, 0 100%);
             -moz-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
             -ms-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+            }
         }
         
         }

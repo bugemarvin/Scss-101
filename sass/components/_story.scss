@@ -55,19 +55,24 @@
         transform: translateX(-4rem) skewX(12deg);
         position: relative;
         overflow: hidden;
+        border-radius: 50%;
 
+        @supports (clip-path: polygon(0 0)){
         //defining where the content should be outside the shape
         shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
         -moz-shape-outside: circle(50% at 50% 50%);
         -ms-shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+        }
          
-        
+        @supports (clip-path: polygon(0 0)){
          //Circle polygon
         clip-path: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         -moz-clip-path: circle(50% at 50% 50%);
         -ms-clip-path: circle(50% at 50% 50%);
+        }
 
         @include respond(phone){
             transform: translateX(0) skewX(0);
@@ -76,9 +81,11 @@
             -ms-transform: translateX(0) skewX(0);
             margin:1rem;
 
+            @supports (clip-path: polygon(0 0)){
             //defining where the content should be outside the shape
             shape-outside: circle(60% at 85% 40%);
             -webkit-shape-outside: circle(60% at 85% 40%);
+            }
         }
 
         &--image{
