@@ -1140,6 +1140,9 @@ li {
          @content
       };
    }*/ }
+    @media (max-width: 37.5em) {
+      .popup__content {
+        width: 90%; } }
   .popup__left {
     width: 33%;
     display: table-cell;
