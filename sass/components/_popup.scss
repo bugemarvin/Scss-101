@@ -55,7 +55,7 @@
         padding: 3rem 5rem;
         vertical-align: middle;
 
-        @include respond(tab-port){
+        @include respond(phone){
             padding: 1.5rem 2.5rem;
         }
 
@@ -94,6 +94,7 @@
         -ms-hyphens: auto;
 
         @include respond(tab-port){
+            
             column-count: 1;
             -moz-column-count: 1;
             -webkit-column-count: 1;
@@ -103,6 +104,11 @@
             -moz-column-gap: 0rem;
             -webkit-column-gap: 0rem;
             -ms-column-gap: 0rem;
+        }
+
+        @include respond(tab-land){
+            font-size: 1rem;
+            margin-bottom: 2rem;
         }
 
     }
@@ -117,6 +123,10 @@
     &:target &__content{
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+
+        @include respond(tab-port){
+            transform: translate(-50%, -50%) scale(.8);
+        }
     }
 
     &__close{
