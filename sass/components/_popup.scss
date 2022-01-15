@@ -11,7 +11,7 @@
     transition: all .3s;
 
     @include respond(tab-port){
-        height: auto;
+        height: 30vh;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%)
