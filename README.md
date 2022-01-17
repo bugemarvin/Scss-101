@@ -16,9 +16,8 @@ https://github.com/jonasschmedtmann/advanced-css-course
 - Sass
  
  # Getting Started
- <br>
- > 1. Cone the repo
-        'https://github.com/bugemarvin/Scss-101-Natours.git'
+ > 1. Cone the repo @<br>
+ > https://github.com/bugemarvin/Scss-101-Natours.git
  
  # Installation
   
