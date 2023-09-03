@@ -4,7 +4,7 @@ Copyright (c) 2018 -2022, <a href="https://github.com/jonasschmedtmann">Jonas Sc
 
 https://github.com/jonasschmedtmann/advanced-css-course
 
- Natours is a static tours and fanatic travellers implemented in Css/Scss with responsive layouts and scalabel designs for tourist to be able explore and choose favorable destinations acording to thier intrested vacation with variety of choices pick from acording to the number of pepole to tour the destination.
+Natours is a static tours and fanatic travelers implemented in Css/Scss with responsive layouts and scalable designs for tourists to be able explore and choose favorable destinations according to their interested vacation with a variety of choices pick from according to the number of people to tour the destination.
  
  # Front-End Demo
  > Click the  link to visit the Demo website <a href="https://scss-101-natours.netlify.app/" target="_blank">Natours</a>
